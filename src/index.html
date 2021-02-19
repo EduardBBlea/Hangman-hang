@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman hang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1>Hangman Game</h1>
+    <div class="float-end">Wrong tries: <span id="wrong-tries">0</span> of <span id="max-wrong"></span></div>
+    <img src="./assets/img/step0.png" alt="hangman" id="hangman-Image">
+    <div class="word-wrapper">
+      <p>Guess the word : <br><span id="word">word to be guessed goes here</span></p>
+    </div>
+    <div class="letterbox"></div>
+    <button class="btn btn-info " onclick="restart()">Restart</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
